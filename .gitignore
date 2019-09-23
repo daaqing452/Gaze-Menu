@@ -1,0 +1,10 @@
+!/analysis/heatmap/*
+!/analysis/*.py
+!/analysis/*/*.py
+/analysis/*
+
+/figs/*
+/temp/*
+/video/*
+GazeDock*.pdf
+hmd-eyes-master.zip

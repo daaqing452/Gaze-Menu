@@ -1,0 +1,69 @@
+<head>
+  <meta charset="utf-8">
+  <title>Point Configuration Example</title>
+</head>
+
+<body data-gr-c-s-loaded="true">
+  
+    <div class="demo-wrapper">
+      <div class="heatmap" style="position: relative; width:1000px; height: 600px;">
+
+      <canvas style="border: 1px solid" class="heatmap-canvas" width="1000" height="600" style="position: absolute; left: 0px; top: 0px;"></canvas></div>
+    </div>
+
+    <input type="file" id="file" >
+    
+  <script src="heatmap.min.js"></script>
+  <script src="jquery-3.4.1.min.js"></script>
+
+  <script>
+    function indexDemo(result) {
+       console.log(result);
+    }
+  </script>
+
+  <script>
+
+    window.onload = function() {
+
+      var heatmapInstance = h337.create({
+        container: document.querySelector('.heatmap'),
+        gradient: {
+          '.00': '#0000ff',
+          '.70': '#00ff00',
+          '.85': '#ffff00',
+          '.95': '#ff0000',
+        },
+      });
+
+
+      // generate 200 random datapoints
+      //var data = generateRandomData(300000);
+
+      var f = document.getElementById("file"); 
+      var gaze;
+      f.onchange = function(){ 
+        var file = this.files[0]; 
+        var reader = new FileReader();
+        reader.readAsText(file);
+        reader.onload = function(){ 
+            gaze = JSON.parse(reader.result);
+            var points = [];
+            for (var i in gaze) {
+                var p = gaze[i];
+                var point = {
+                  x: p[0] * 300 + 500,
+                  y: p[1] * 300 + 350,
+                  value: 0.00025,
+                }
+                points.push(point);
+            }
+            var data = { max: 11, data: points };
+            heatmapInstance.setData(data);
+        }
+      }
+    };
+  </script>
+
+
+</body>

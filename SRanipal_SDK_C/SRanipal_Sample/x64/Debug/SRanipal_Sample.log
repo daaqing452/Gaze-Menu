@@ -1,0 +1,21 @@
+﻿  main.cpp
+e:\gaze dock\c_recorder\include\sranipal_eyedatatype.h(142): warning C4334: “<<”: 32 位移位的结果被隐式转换为 64 位(是否希望进行 64 位移位?)
+e:\gaze dock\c_recorder\include\sranipal_eyedatatype.h(142): warning C4800: “uint64_t”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\gaze dock\c_recorder\include\sranipal_eyedatatype.h(184): warning C4091: “typedef ”: 没有声明变量时忽略“ViveSR::anipal::Eye::CombinedEyeData”的左侧
+e:\gaze dock\c_recorder\sranipal_sample\main.cpp(29): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: 参见“localtime”的声明
+e:\gaze dock\c_recorder\sranipal_sample\main.cpp(73): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: 参见“localtime”的声明
+e:\gaze dock\c_recorder\sranipal_sample\main.cpp(75): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+e:\gaze dock\c_recorder\sranipal_sample\main.cpp(76): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  SRanipal_Sample.vcxproj -> E:\Gaze Dock\C_Recorder\x64\Debug\SRanipal_Sample.exe
+  SRanipal_Sample.vcxproj -> E:\Gaze Dock\C_Recorder\x64\Debug\SRanipal_Sample.pdb (Full PDB)
+  ..\bin\libHTC_License.dll
+  ..\bin\nanomsg.dll
+  ..\bin\SRanipal.dll
+  ..\bin\SRWorks_Log.dll
+  ..\bin\ViveSR_Client.dll
+  已复制         5 个文件。
+  已复制         1 个文件。
