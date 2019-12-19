@@ -47,7 +47,7 @@ namespace ViveSR {
                 private void Start() {
 
                     filepath = "2-12-" + DateTime.Now.ToString("yyyyMMddhhmmss") + ".txt";
-                    FileStream create = new FileStream("E:\\Gaze Dock\\rec\\" + filepath, FileMode.CreateNew);
+                    FileStream create = new FileStream("rec\\" + filepath, FileMode.CreateNew);
                     create.Close();
                     gazeMenu = GameObject.Find("gaze_menu_12");
                     ren = gazeMenu.GetComponentsInChildren<Renderer>();
@@ -81,7 +81,7 @@ namespace ViveSR {
                     }
                     if (isStart && count == 0) {
                         hint.GetComponent<TextMesh>().text = nextCount();
-                        StreamWriter writer = new StreamWriter(new FileStream("E:\\Gaze Dock\\rec\\" + filepath, FileMode.Append));
+                        StreamWriter writer = new StreamWriter(new FileStream("rec\\" + filepath, FileMode.Append));
                         writer.WriteLine(mark + " " + time_recorder + " " + randomInt[(count - 1) % 12] + " " + GazeDirectionCombinedLocal.x + " " + GazeDirectionCombinedLocal.y
                             + " " + GazeDirectionCombinedLocal.z + " " + mis);
                         writer.Close();
@@ -127,7 +127,7 @@ namespace ViveSR {
                         hint.GetComponent<TextMesh>().text = nextCount();
                     }
                     if (rec && isStart) {
-                        StreamWriter writer = new StreamWriter(new FileStream("E:\\Gaze Dock\\rec\\" + filepath, FileMode.Append));
+                        StreamWriter writer = new StreamWriter(new FileStream("rec\\" + filepath, FileMode.Append));
                         writer.WriteLine(mark + " " + time_recorder + " " + randomInt[(count - 1) % 12] + " " + GazeDirectionCombinedLocal.x + " " + GazeDirectionCombinedLocal.y
                             + " " + GazeDirectionCombinedLocal.z + " " + mis);
                         writer.Close();

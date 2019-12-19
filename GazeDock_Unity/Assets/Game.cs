@@ -89,7 +89,7 @@ namespace ViveSR {
                     nowTeleport = GameObject.Find("teleporter (0)");
 
                     GameObject.Find("ring_text").GetComponent<Ring_text>().enabled = false;
-                   if (technique == Technique.GazeDock) {
+                    if (technique == Technique.GazeDock) {
                         GameObject.Find("Menu Trigger").SetActive(false);
                     } else {
 
@@ -450,7 +450,7 @@ namespace ViveSR {
                 }
 
                 public void changeIsStart() {
-                    writer = new StreamWriter(new FileStream("game-" + DateTime.Now.ToString("yyMMdd-hhmmss") + "-" + technique + ".txt", FileMode.Create));
+                    writer = new StreamWriter(new FileStream("rec/game-" + DateTime.Now.ToString("yyMMdd-hhmmss") + "-" + technique + ".txt", FileMode.Create));
                 }
 
                 void Log(string s) {

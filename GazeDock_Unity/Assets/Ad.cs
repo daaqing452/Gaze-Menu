@@ -20,7 +20,7 @@ namespace ViveSR {
                 //private LineRenderer _lineRender;
                 private int s_counter = 0, bar_s = 0 , previous = 0;
                 public int num = 8;
-                public int serial_number = 0;
+                public string serial_number = "default";
                 private bool status = true;
                 float x_min = 0, x_max = 0, y_min = 0, y_max = 0;
                 private int counter = 0;
@@ -59,8 +59,8 @@ namespace ViveSR {
                     Assert.IsNotNull(GazeRayRenderer);
                     filepath = "No" + serial_number + ".txt";
                     
-                    if (File.Exists("E:\\Gaze Dock\\rec\\" + filepath)) {
-                        StreamReader str = new StreamReader(new FileStream("E:\\Gaze Dock\\rec\\" + filepath, FileMode.Open, FileAccess.Read));
+                    if (File.Exists("rec\\" + filepath)) {
+                        StreamReader str = new StreamReader(new FileStream("rec\\" + filepath, FileMode.Open, FileAccess.Read));
                         float[] f = new float[4];
                         int i = 0;
                         while (true) {
@@ -90,7 +90,7 @@ namespace ViveSR {
                         status = false;
 
                     } else {
-                        FileStream create = new FileStream("E:\\Gaze Dock\\rec\\" + filepath, FileMode.CreateNew);
+                        FileStream create = new FileStream("rec\\" + filepath, FileMode.CreateNew);
                         create.Close();
                     }
                     //Debug.Log(Oval.A +"/"+ Oval.B + "/" + Oval.X0 + "/" + Oval.Y0);
@@ -136,7 +136,7 @@ namespace ViveSR {
                             }
                             cg.alpha = 1.0f;
                             Oval.IsFinished = true;
-                            StreamWriter writer = new StreamWriter(new FileStream("E:\\Gaze Dock\\rec\\" + filepath, FileMode.Append));
+                            StreamWriter writer = new StreamWriter(new FileStream("rec\\" + filepath, FileMode.Append));
                             writer.WriteLine(Oval.A);
                             writer.WriteLine(Oval.B);
                             writer.WriteLine(Oval.X0);

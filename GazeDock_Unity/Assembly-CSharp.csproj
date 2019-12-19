@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{B0C53399-7AC3-C9D0-E073-71116363071D}</ProjectGuid>
+    <ProjectGuid>{CD665A03-4994-29A6-1877-A19F90C2BE09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -140,10 +140,10 @@
     <None Include="Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
     <None Include="Assets\ViveSR\Shaders\Unlit-Alpha2Gray.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/Gaze Dock/Gaze Menu/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/Gaze Dock/GazeDock_Unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Gaze Dock/Gaze Menu/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Gaze Dock/GazeDock_Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018.1.0b12/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -385,7 +385,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{719EA676-786A-DD8A-0D65-49BEB79E4E77}</Project>
+      <Project>{5B197B9A-64FF-89EC-1AA1-06E02DC6FF8D}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

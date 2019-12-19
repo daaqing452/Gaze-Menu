@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LengthOfRay: 0
-  technique: 1
+  technique: 0
   mainCamera: {fileID: 0}
   GazeRayRenderer: {fileID: 1675336999}
   s: {fileID: 2100000, guid: 74ffcd5c702f4f74c8d6f18a79a93c81, type: 2}
@@ -5183,7 +5183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &407312844
 Transform:
   m_ObjectHideFlags: 0
@@ -23113,7 +23113,7 @@ MonoBehaviour:
   LengthOfRay: 25
   GazeRayRenderer: {fileID: 1675336999}
   num: 4
-  serial_number: 11
+  serial_number: wuzihan
   s: {fileID: 2100000, guid: 74ffcd5c702f4f74c8d6f18a79a93c81, type: 2}
 --- !u!1 &1684788812
 GameObject:
@@ -23482,7 +23482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1702935500
 Transform:
   m_ObjectHideFlags: 0
